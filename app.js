@@ -4,6 +4,8 @@
   const panels = Array.from(document.querySelectorAll('.tab-panel'));
   const tabs = Array.from(document.querySelectorAll('.main-nav [role="tab"]'));
   const validIds = new Set(panels.map(panel => panel.id));
+  const recording = document.querySelector('#sincrona .recording-player iframe');
+  const recordingSource = recording?.getAttribute('src');
   const titles = {
     fabriq: 'Fabriq · Computação que já existe. Novas possibilidades.',
     sincrona: 'Fabriq · Análise da entrevista síncrona',
@@ -18,6 +20,11 @@
       tab.setAttribute('aria-selected', String(selected));
       tab.tabIndex = selected ? 0 : -1;
     });
+    if (recording && recordingSource) {
+      if (id === 'sincrona') {
+        if (recording.getAttribute('src') !== recordingSource) recording.setAttribute('src', recordingSource);
+      } else if (recording.hasAttribute('src')) recording.removeAttribute('src');
+    }
     document.title = titles[id];
     if (resetScroll) window.scrollTo({ top: 0, behavior: 'instant' });
   }
