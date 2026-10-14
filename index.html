@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Fabriq: uma proposta de computação distribuída com recursos existentes. Conheça a ideia e os aprendizados das entrevistas do MVP.">
+  <meta name="theme-color" content="#102C43">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Fabriq · Computação que já existe. Novas possibilidades.">
+  <meta property="og:description" content="Uma visão de produto e duas perspectivas sobre seu valor: indústria e pesquisa em IA.">
+  <meta property="og:url" content="https://miguel-calhabeu.github.io/fabriq-mvp/">
+  <meta property="og:image" content="https://miguel-calhabeu.github.io/fabriq-mvp/assets/social-cover.png">
+  <title>Fabriq · Computação que já existe. Novas possibilidades.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-chip" viewBox="0 0 48 48"><rect x="12" y="12" width="24" height="24" rx="4"/><path d="M18 4v8M30 4v8M18 36v8M30 36v8M4 18h8M4 30h8M36 18h8M36 30h8"/><rect x="19" y="19" width="10" height="10" rx="1"/></symbol>
+      <symbol id="icon-network" viewBox="0 0 48 48"><circle cx="12" cy="12" r="7"/><circle cx="36" cy="12" r="7"/><circle cx="24" cy="36" r="7"/><path d="M19 12h10M15 18l6 12M33 18l-6 12"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 48 48"><path d="M24 4L41 11l-1 16c-1 8-8 13-16 17C16 40 9 35 8 27L7 11zM15 23l6 6 13-14"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 12v13l10 6"/></symbol>
+      <symbol id="icon-screen" viewBox="0 0 48 48"><rect x="5" y="7" width="38" height="27" rx="3"/><path d="M24 34v8M14 42h20"/></symbol>
+      <symbol id="icon-key" viewBox="0 0 48 48"><circle cx="15" cy="17" r="10"/><path d="M22 24l18 18M29 31l7-7M35 37l7-7"/></symbol>
+      <symbol id="icon-file" viewBox="0 0 48 48"><path d="M9 4h20l10 10v30H9zM29 4v10h10M17 22h14M17 29h14M17 36h8"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 48 48"><path d="M9 4h20l10 10v30H9zM29 4v10h10M16 27l6 6 11-15"/></symbol>
+      <symbol id="icon-remote" viewBox="0 0 48 48"><rect x="6" y="18" width="36" height="23" rx="3"/><path d="M16 47h16M24 41v6M15 10a13 13 0 0 1 18 0M20 14a6 6 0 0 1 8 0"/></symbol>
+      <symbol id="icon-bubble" viewBox="0 0 48 48"><path d="M5 7h38v28H20L8 44v-9H5zM13 17h22M13 25h15"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#fabriq" aria-label="Fabriq, página inicial"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>FABRIQ</a>
+      <nav class="main-nav" aria-label="Seções do site" role="tablist">
+        <a id="tab-fabriq" href="#fabriq" role="tab" aria-controls="fabriq" aria-selected="true">A Fabriq</a>
+        <a id="tab-sincrona" href="#sincrona" role="tab" aria-controls="sincrona" aria-selected="false">Entrevista síncrona</a>
+        <a id="tab-assincrona" href="#assincrona" role="tab" aria-controls="assincrona" aria-selected="false">Entrevista assíncrona</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="tab-panel" id="fabriq" role="tabpanel" aria-labelledby="tab-fabriq">
+      <div class="hero">
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <p class="eyebrow light-eyebrow">Uma visão de produto</p>
+            <h1>Mais possibilidades<br>com a computação<br>que já existe<span>.</span></h1>
+            <p class="hero-description">A Fabriq propõe coordenar equipamentos disponíveis de empresas e instituições para executar tarefas compatíveis de forma distribuída.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#proposta">Conheça a proposta <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a class="text-link light-link" href="#sincrona">Veja o que aprendemos</a></div>
+            <p class="hero-stage"><span class="status-dot" aria-hidden="true"></span>Projeto acadêmico · MVP de percepção de valor</p>
+          </div>
+          <figure class="hero-visual" aria-labelledby="visual-caption">
+            <svg viewBox="0 0 540 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="network-title network-desc">
+              <title id="network-title">Recursos existentes, coordenados pela Fabriq</title><desc id="network-desc">Uma demanda chega à coordenação da Fabriq, que selecionaria equipamentos autorizados e compatíveis e reuniria os resultados.</desc>
+              <defs><marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1l7 4-7 4" fill="none" stroke="#F36A3D" stroke-width="2"/></marker></defs>
+              <g fill="none" stroke="#7E929B" stroke-width="1.2"><rect x="28" y="35" width="477" height="396" rx="22" stroke-dasharray="4 8"/></g>
+              <text x="54" y="66" fill="#BDC9CD" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5">AMBIENTE DA ORGANIZAÇÃO</text>
+              <g fill="none" stroke="#F36A3D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M115 202h56" marker-end="url(#flow-arrow)"/><path d="M273 202h42v-79h40M315 202h40M315 202v80h40" marker-end="url(#flow-arrow)"/></g>
+              <rect x="174" y="154" width="98" height="98" rx="16" fill="#183C55" stroke="#728D9C" stroke-width="1.3"/>
+              <g transform="translate(203 180)" stroke="#F5F2EA" stroke-width="2.2" fill="none"><rect x="4" y="4" width="34" height="34" rx="5"/><path d="M12-3v7M30-3v7M12 38v7M30 38v7M-3 12h7M-3 30h7M38 12h7M38 30h7"/><circle cx="21" cy="21" r="5" fill="#F36A3D" stroke="none"/></g>
+              <g transform="translate(61 174)" stroke="#F5F2EA" stroke-width="2.2" fill="none"><path d="M6 0h28l12 12v43H6zM34 0v12h12M15 24h21M15 34h21M15 44h13"/></g>
+              <g stroke="#F5F2EA" stroke-width="2.2" fill="none"><rect x="364" y="95" width="57" height="37" rx="4"/><path d="M392 132v12M377 144h30"/><rect x="369" y="177" width="48" height="34" rx="3"/><path d="M360 222l9-11h48l9 11z"/><rect x="373" y="256" width="41" height="51" rx="4"/><path d="M373 273h41M373 290h41M382 265h4M382 282h4M382 299h4"/></g>
+              <g font-family="Arial,sans-serif" font-size="15" fill="#F5F2EA" text-anchor="middle"><text x="88" y="291">Demanda</text><text x="223" y="291">Fabriq</text><text x="390" y="345">Recursos disponíveis</text></g>
+              <g fill="none" stroke="#7E929B" stroke-width="2" stroke-linecap="round"><path d="M431 122h32v226q0 15-15 15H242q-14 0-14 14v3M426 202h37M426 282h37"/></g>
+              <g transform="translate(212 382)" fill="none" stroke="#F36A3D" stroke-width="2.2"><path d="M0 0h22l10 10v36H0zM22 0v10h10M7 25l6 6 12-16"/></g>
+              <text x="273" y="409" fill="#F5F2EA" font-family="Arial,sans-serif" font-size="15">Resultados reunidos</text>
+            </svg>
+            <figcaption id="visual-caption">Representação conceitual do funcionamento proposto.</figcaption>
+          </figure>
+        </div>
+        <div class="hero-ribbon" aria-hidden="true"></div>
+      </div>
+
+      <div class="container page-content">
+        <section class="intro-section" id="proposta" aria-labelledby="proposta-title">
+          <div class="section-heading"><p class="eyebrow">01 / A oportunidade</p><h2 id="proposta-title">Recursos disponíveis.<br>Demandas que continuam.</h2></div>
+          <div class="intro-copy"><p>Projetos de pesquisa e inovação podem precisar de mais tempo de processamento, acesso remoto ou disponibilidade de software. Ao mesmo tempo, parte dos equipamentos de uma organização pode ficar ociosa.</p><p>Nossa hipótese é que coordenar recursos compatíveis, com autorização e limites claros, pode criar novas possibilidades para algumas dessas rotinas. <strong>O caso de uso e o ganho precisam ser demonstrados.</strong></p></div>
+        </section>
+
+        <section class="flow-section" aria-labelledby="funcionamento-title">
+          <div class="section-heading compact"><p class="eyebrow">02 / A visão tecnológica</p><h2 id="funcionamento-title">Como imaginamos o produto.</h2><p>Uma camada de coordenação conecta tarefas elegíveis a recursos autorizados.</p></div>
+          <ol class="product-flow">
+            <li><span class="flow-number">01</span><svg class="large-icon" aria-hidden="true"><use href="#icon-file"/></svg><h3>Enviar uma tarefa</h3><p>Definir o trabalho e seus requisitos.</p></li>
+            <li><span class="flow-number">02</span><svg class="large-icon" aria-hidden="true"><use href="#icon-network"/></svg><h3>Selecionar recursos</h3><p>Considerar compatibilidade e disponibilidade.</p></li>
+            <li><span class="flow-number">03</span><svg class="large-icon" aria-hidden="true"><use href="#icon-chip"/></svg><h3>Executar com limites</h3><p>Respeitar permissões e o uso principal das máquinas.</p></li>
+            <li><span class="flow-number">04</span><svg class="large-icon" aria-hidden="true"><use href="#icon-check"/></svg><h3>Reunir resultados</h3><p>Acompanhar o trabalho e receber as saídas.</p></li>
+          </ol>
+          <p class="context-note">Tarefas independentes ou realmente paralelizáveis são candidatas. Hardware, memória, software, dados e regras de uso precisam ser compatíveis com cada execução.</p>
+        </section>
+
+        <section class="values-section" aria-labelledby="quem-title">
+          <div class="section-heading"><p class="eyebrow">03 / Quem somos</p><h2 id="quem-title">Tecnologia com propósito.<br>Aprendizado com evidência.</h2><p>Somos a equipe Fabriq, um grupo de estudantes do ICMC-USP desenvolvendo um projeto na disciplina de Empreendedorismo. Nossa visão combina melhor uso dos recursos existentes e respeito às condições de cada organização.</p></div>
+          <div class="values-grid">
+            <article><svg class="icon" aria-hidden="true"><use href="#icon-screen"/></svg><h3>Aproveitar o que já existe</h3><p>Investigar o potencial dos ativos disponíveis antes de ampliar a infraestrutura.</p></article>
+            <article><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><h3>Respeitar o contexto</h3><p>Tratar permissões, privacidade e regras institucionais como condições do produto.</p></article>
+            <article><svg class="icon" aria-hidden="true"><use href="#icon-bubble"/></svg><h3>Ouvir antes de construir</h3><p>Entender as rotinas e os motivos para adotar, ajustar ou rejeitar a ideia.</p></article>
+          </div>
+        </section>
+
+        <section class="learning-section" aria-labelledby="aprendizados-title">
+          <div class="section-heading compact"><p class="eyebrow">04 / Nosso MVP</p><h2 id="aprendizados-title">Duas perspectivas.<br>Aprendizados para o próximo passo.</h2><p>O MVP não tangível reúne esta landing page, uma entrevista síncrona com um profissional da indústria e academia e uma entrevista assíncrona com um mestrando de IA.</p></div>
+          <div class="learning-links">
+            <a class="learning-card" href="#sincrona"><span class="card-kicker">Indústria e academia</span><h3>Governança, recursos<br>e uso compartilhado.</h3><p>Onde a proposta pode ser atrativa e o que condiciona a adoção.</p><span class="card-action">Análise da entrevista síncrona <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></a>
+            <a class="learning-card" href="#assincrona"><span class="card-kicker">Pesquisa em IA</span><h3>Acesso remoto<br>e continuidade da pesquisa.</h3><p>Uma dor concreta, um valor percebido e requisitos institucionais.</p><span class="card-action">Análise da entrevista assíncrona <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span></a>
+          </div>
+          <div class="scope-strip"><span class="scope-label">O que avaliamos agora</span><p>Percepção de utilidade e condições de adoção. Desempenho, economia e viabilidade técnica serão investigados em etapas posteriores.</p></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="sincrona" role="tabpanel" aria-labelledby="tab-sincrona">
+      <div class="analysis-header container"><p class="eyebrow">Entrevista síncrona · ES-01</p><h1>Valor depende<br>de um caso concreto<span>.</span></h1><p class="analysis-lead">Uma conversa com um profissional de engenharia, inovação industrial e interface com a academia trouxe oportunidades de acesso a recursos — e condições que podem limitar a adoção.</p><div class="meta-row"><span>1 participante</span><span>Perspectiva industrial e acadêmica</span><span>Registro de 13/10/2026</span></div></div>
+      <div class="container analysis-content">
+        <section class="takeaway" aria-labelledby="sync-takeaway"><div><p class="eyebrow">Leitura central</p><h2 id="sync-takeaway">Uma tarefa útil.<br>Uma infraestrutura confiável.</h2></div><p>O profissional percebeu um possível encaixe em operações de demanda moderada e sugeriu investigar a coordenação de recursos de software. A leitura da equipe é que a Fabriq precisa partir de uma dor específica, comparar-se com a solução atual e envolver os responsáveis pela infraestrutura.</p></section>
+        <section class="comparison-grid" aria-label="Atrativos e barreiras da entrevista síncrona">
+          <article class="comparison-card"><p class="eyebrow">Atrativos percebidos</p><h2>Ampliar o acesso.</h2><ul class="insight-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-network"/></svg><div><h3>Mais recursos para mais pessoas</h3><p>Disponibilizar capacidade e software a quem precisa executar tarefas.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-key"/></svg><div><h3>Coordenação de uso de software</h3><p>Filas e tokens foram sugeridos para licenças flutuantes, conforme os contratos permitirem.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><div><h3>Controle institucional</h3><p>Governança sobre dados e acesso apareceu como um possível motivo de interesse.</p></div></li></ul></article>
+          <article class="comparison-card attention"><p class="eyebrow">Barreiras de adoção</p><h2>Conquistar confiança.</h2><ul class="insight-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><div><h3>Aprovação e segurança</h3><p>A TI precisa avaliar acesso, proteção dos dados e condições de operação.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><div><h3>Manutenção e confiabilidade</h3><p>Responsáveis, suporte e disponibilidade fazem parte da decisão.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-screen"/></svg><div><h3>Um parque de máquinas que muda</h3><p>A composição dos recursos pode variar ao longo do tempo.</p></div></li></ul></article>
+        </section>
+        <section class="evidence-section" aria-labelledby="sync-evidence-title"><div class="section-heading compact"><p class="eyebrow">Da conversa à análise</p><h2 id="sync-evidence-title">O que foi relatado.<br>O que a equipe interpreta.</h2><p>Abra cada achado para consultar a evidência e a questão que permanece em aberto.</p></div>
+          <details class="evidence" open><summary><span class="finding-number">01</span><h3>Um recorte de demanda moderada</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O profissional considerou um possível uso em operações mais simples e observou que soluções em nuvem já atendem parte das demandas.</p><p class="source">ES-01 · 00:36:16 e 00:42:22</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Partir de uma tarefa delimitada e de uma comparação com a alternativa atual, em vez de uma oferta ampla para qualquer processamento.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Em qual tarefa o valor seria maior que o esforço de implantação e operação?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">02</span><h3>Licenças flutuantes: uma hipótese adjacente</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O entrevistado sugeriu gerenciar filas e tokens para coordenar o acesso de vários usuários a licenças de software.</p><p class="source">ES-01 · 00:37:41–00:38:53</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Há uma oportunidade a explorar além do hardware. Essa sugestão ainda precisa ser avaliada como um recorte próprio.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Existe demanda recorrente? O que os contratos permitem? Quais funções já são oferecidas pelos fornecedores?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">03</span><h3>Governança precisa ser demonstrada</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>Proteção de dados, confiança da TI, funcionamento do sistema e responsabilidade pela manutenção foram apontados como pontos de atenção.</p><p class="source">ES-01 · 00:42:22–00:47:03</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Definir requisitos com os responsáveis pela infraestrutura. A fala da equipe sobre “governança total” foi uma hipótese de posicionamento, não uma garantia demonstrada.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Que evidências de isolamento, controle de acesso e confiabilidade seriam necessárias para considerar um teste?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">04</span><h3>Os recursos disponíveis podem mudar</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O entrevistado chamou a atenção para equipamentos alugados e mudanças na composição do parque de máquinas.</p><p class="source">ES-01 · 00:33:41 e 00:44:47</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>O produto precisaria adaptar-se à entrada e à saída de recursos, respeitando as permissões e regras da organização.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Como tratar interrupções e alterações de capacidade sem comprometer o trabalho?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">05</span><h3>A próxima prova deve responder a uma dor real</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>Foi sugerida uma prova de conceito ligada a um caso concreto. O profissional também questionou se todos os nós exigiriam a mesma velocidade de comunicação.</p><p class="source">ES-01 · 00:49:26</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Testar uma carga e suas condições reais de rede antes de assumir uma arquitetura uniforme. Uma POC seria uma etapa técnica posterior a este MVP.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Qual tarefa, qual configuração e qual medida de valor tornariam o teste útil?</p></div></div></details>
+        </section>
+        <section class="next-step"><p class="eyebrow">Próximo passo proposto</p><h2>Escolher um caso.<br>Definir condições.<br>Comparar com o que já funciona.</h2><p>A equipe propõe aprofundar uma tarefa de demanda moderada, mapear a solução atual e levantar requisitos com quem decide sobre os recursos. A hipótese de coordenação de licenças será investigada separadamente.</p></section>
+        <aside class="evidence-limit"><h3>O alcance desta evidência</h3><p>Esta análise vem de uma entrevista exploratória com um especialista. A transcrição e as anotações automáticas podem conter erros. Os achados orientam a pesquisa; não comprovam desempenho, economia, demanda de mercado ou uma decisão de adoção da organização.</p><p class="source">Fonte ES-01 · síntese pública por perfil, sem a transcrição integral.</p></aside>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="assincrona" role="tabpanel" aria-labelledby="tab-assincrona">
+      <div class="analysis-header container"><p class="eyebrow">Entrevista assíncrona · EA-01</p><h1>O maior valor percebido:<br>acessar de onde<br>a pesquisa acontece<span>.</span></h1><p class="analysis-lead">Um mestrando de IA relatou limitações para analisar imagens com modelos locais. Sua prioridade foi acessar remotamente a capacidade do laboratório a partir do laptop pessoal.</p><div class="meta-row"><span>1 participante</span><span>Pesquisa em IA</span><span>Perguntas e respostas</span></div></div>
+      <div class="container analysis-content">
+        <div class="reported-data" aria-label="Informações relatadas pelo participante"><article><span class="data-label">Volume relatado</span><strong>Mais de 5.000</strong><p>imagens no projeto</p></article><article><span class="data-label">Exemplo de execução relatado</span><strong>300 imagens</strong><p>em mais de 15 minutos</p></article><article><span class="data-label">Valor destacado</span><strong>Acesso remoto</strong><p>às máquinas do laboratório</p></article></div>
+        <p class="context-note data-note">Informações do relato, sem medição independente. O tempo citado se refere ao ambiente atual do participante, não ao desempenho da Fabriq.</p>
+        <section class="takeaway" aria-labelledby="async-takeaway"><div><p class="eyebrow">Leitura central</p><h2 id="async-takeaway">Continuidade de trabalho.<br>Acesso autorizado.</h2></div><p>O valor percebido combina capacidade de processamento e liberdade para enviar tarefas quando o pesquisador está fora do laboratório. A equipe interpreta esse relato como um caso candidato para investigação, condicionado à infraestrutura e às regras da instituição.</p></section>
+        <section class="comparison-grid" aria-label="Atrativos e barreiras da entrevista assíncrona"><article class="comparison-card"><p class="eyebrow">Atrativos percebidos</p><h2>Avançar na pesquisa.</h2><ul class="insight-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-remote"/></svg><div><h3>Acesso a partir do laptop</h3><p>Enviar trabalho ao laboratório quando o pesquisador não está fisicamente presente.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-network"/></svg><div><h3>Aproveitar equipamentos disponíveis</h3><p>O participante relatou máquinas do laboratório como recursos que poderiam contribuir.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><div><h3>Continuidade das análises</h3><p>A expectativa é avançar mais por dia; a aceleração ainda precisaria ser medida.</p></div></li></ul></article><article class="comparison-card attention"><p class="eyebrow">Barreiras de adoção</p><h2>Respeitar a instituição.</h2><ul class="insight-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-key"/></svg><div><h3>Usuários credenciados</h3><p>O acesso às máquinas está sujeito a regras e autenticação.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><div><h3>Proteção dos dados de pesquisa</h3><p>Isolar as tarefas do conteúdo já existente nos equipamentos é uma condição levantada.</p></div></li><li><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg><div><h3>Aprovação institucional</h3><p>O interesse do usuário precisa encontrar um caminho de avaliação pelos responsáveis.</p></div></li></ul></article></section>
+        <section class="evidence-section" aria-labelledby="async-evidence-title"><div class="section-heading compact"><p class="eyebrow">Da rotina ao requisito</p><h2 id="async-evidence-title">Uma dor concreta.<br>Um caso ainda a testar.</h2><p>Relatos do participante e interpretações da equipe aparecem separadamente.</p></div>
+          <details class="evidence" open><summary><span class="finding-number">01</span><h3>Limites de tempo e capacidade interrompem o avanço</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O participante usa modelos locais no Colab gratuito e relata limites de tempo e infraestrutura que restringem suas análises diárias.</p><p class="source">EA-01 · perguntas 2 e 3</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Existe uma dificuldade concreta a aprofundar: executar um volume de análises com continuidade e recursos adequados.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Qual é a configuração de cada modelo e qual parte da rotina limita mais o avanço?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">02</span><h3>Acesso remoto foi o atrativo de maior valor</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O maior ganho apontado foi usar, do laptop pessoal, a capacidade das máquinas do laboratório quando ele está fora dele.</p><p class="source">EA-01 · pergunta 4</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>O caso de uso inclui um ponto de entrada remoto autorizado, além da coordenação de processamento interno.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Quais dispositivos, usuários e tarefas poderiam ser autorizados pela instituição?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">03</span><h3>Análises de imagens em lote são candidatas</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>A rotina envolve analisar várias imagens com diferentes modelos e comparar a qualidade das descrições produzidas.</p><p class="source">EA-01 · pergunta 2</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Execuções por imagem podem permitir uma comparação de tarefas independentes em recursos compatíveis. Essa adequação é uma hipótese a testar.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Hardware, memória, ambiente de execução, circulação dos dados e preservação da qualidade.</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">04</span><h3>Isolamento e autenticação são condições de entrada</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O acesso ao laboratório e aos computadores exige credenciamento. O participante também mencionou dados de pesquisa presentes nas máquinas.</p><p class="source">EA-01 · pergunta 5</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>Integrar-se ao controle de acesso existente e definir como as tarefas serão isoladas são requisitos para discutir um piloto.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Quais mecanismos e evidências os responsáveis exigiriam para permitir a execução?</p></div></div></details>
+          <details class="evidence"><summary><span class="finding-number">05</span><h3>Interesse do usuário e adoção institucional são decisões distintas</h3><span class="expand-icon" aria-hidden="true">+</span></summary><div class="evidence-grid"><div><p class="evidence-label">Relato registrado</p><p>O participante prevê barreiras e burocracia para a adoção em uma rede universitária.</p><p class="source">EA-01 · pergunta 5</p></div><div><p class="evidence-label">Interpretação da equipe</p><p>O próximo diálogo deve incluir quem responde pelas máquinas e pela rede. Uma opinião favorável do usuário não autoriza a instituição.</p></div><div><p class="evidence-label">Ainda a investigar</p><p>Quem avalia a proposta, quais recursos podem entrar e qual seria o escopo permitido?</p></div></div></details>
+        </section>
+        <section class="requirements-section" aria-labelledby="requisitos-title"><div class="section-heading compact"><p class="eyebrow">Requisitos propostos a partir do relato</p><h2 id="requisitos-title">O acesso precisa<br>vir acompanhado de controle.</h2></div><div class="requirement-grid"><article><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><h3>Isolamento dos dados</h3><p>Separar a execução das tarefas do conteúdo presente nas máquinas.</p></article><article><svg class="icon" aria-hidden="true"><use href="#icon-key"/></svg><h3>Autenticação institucional</h3><p>Respeitar o credenciamento e as permissões existentes.</p></article><article><svg class="icon" aria-hidden="true"><use href="#icon-remote"/></svg><h3>Submissão remota autorizada</h3><p>Definir quem pode enviar quais tarefas e a partir de quais dispositivos.</p></article><article><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><h3>Limites de uso</h3><p>Preservar a atividade principal dos equipamentos e as regras de disponibilidade.</p></article></div></section>
+        <section class="next-step"><p class="eyebrow">Próximo passo proposto</p><h2>Mapear uma carga real.<br>Envolver os responsáveis.<br>Definir um teste autorizado.</h2><p>A equipe propõe detalhar uma análise de imagens em lote, verificar os recursos disponíveis e discutir um piloto delimitado com os responsáveis pelo laboratório. A avaliação futura deve considerar tempo, qualidade dos resultados, interrupções e impacto no uso das máquinas.</p></section>
+        <aside class="evidence-limit"><h3>O alcance desta evidência</h3><p>O registro vem de um participante em um contexto específico de pesquisa. Os tempos e os ganhos esperados são relatos, não medições da Fabriq. A entrevista identifica utilidade percebida e requisitos; não comprova desempenho, economia ou decisão de adoção.</p><p class="source">Fonte EA-01 · registro de perguntas e respostas fornecido ao grupo.</p></aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#fabriq">FABRIQ</a><p>Projeto acadêmico · Empreendedorismo · ICMC-USP</p></div><div class="footer-links"><a href="#sincrona">Perspectiva industrial</a><a href="#assincrona">Perspectiva da pesquisa</a><a href="https://github.com/Miguel-Calhabeu/fabriq-mvp" target="_blank" rel="noopener noreferrer">Repositório do projeto <span aria-hidden="true">↗</span></a></div></div><div class="container footer-bottom"><p>Uma ideia em investigação. Aprendizados exploratórios, com relatos e hipóteses identificados.</p><p>© 2026 · Equipe Fabriq</p></div></footer>
+</body>
+</html>
